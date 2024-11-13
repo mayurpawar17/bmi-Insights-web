@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial;
+}
+
+body{
+    display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; 
+  margin: 0;
+}
+.container{
+    /* border: 1px black solid; */
+    width: 300px;
+    height: 350px;
+    border-radius: 8px;
+    box-shadow: 1px 1px 8px lightgray;
+}
+.title-container{
+    border-top-left-radius: 8px;
+   border-top-right-radius: 8px;
+   padding: 5px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    height: 80px;
+    background-color: blueviolet;
+}
+.title{
+    color: white;
+    font-size: 25px;
+}
+input{
+    padding: 10px 12px;
+    width: 50px;
+    text-align: center;
+    margin: 2vh 1vh;
+    border: none;
+    border-bottom: 2px solid blueviolet;
+}
+input:focus{
+    outline: none;
+}
+
+.input-container{
+    margin-top: 2vh;
+    display: flex;
+    justify-content: center;
+    /* border: 1px red solid; */
+}
+.input-subcontainer{
+    margin: 0 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.btns{
+    /* border: 1px red solid; */
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+button{
+    padding: 5px 10px;
+    border: 2px solid blueviolet;
+    border-radius: 3px;
+    background-color: white;
+    color: blueviolet;
+    font-weight: bold;
+    transition: all 0.5s ease;
+}
+button:hover{
+    background-color: blueviolet;
+    color: white;
+}
+.result-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+.res{
+    font-size: 32px;
+    font-weight: bold;
+}
