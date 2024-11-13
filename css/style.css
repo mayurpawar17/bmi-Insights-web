@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
 *{
     padding: 0;
     margin: 0;
-    font-family: Arial;
+    font-family: "Poppins",Arial;
 }
 
 body{
@@ -35,9 +37,11 @@ body{
 input{
     padding: 10px 12px;
     width: 50px;
+    font-size: 18px;
     text-align: center;
-    margin: 2vh 1vh;
+    margin: 5px 5px;
     border: none;
+    font-weight: bold;
     border-bottom: 2px solid blueviolet;
 }
 input:focus{
@@ -45,10 +49,8 @@ input:focus{
 }
 
 .input-container{
-    margin-top: 2vh;
     display: flex;
     justify-content: center;
-    /* border: 1px red solid; */
 }
 .input-subcontainer{
     margin: 0 2vh;
@@ -56,9 +58,12 @@ input:focus{
     flex-direction: column;
     align-items: center;
 }
+.input-subcontainer p{
+    font-size: 15px;
+}
 .btns{
     /* border: 1px red solid; */
-    margin-top: 30px;
+    margin-top: 20px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -83,6 +88,6 @@ button:hover{
     margin-top: 20px;
 }
 .res{
-    font-size: 32px;
+    font-size: 30px;
     font-weight: bold;
 }
