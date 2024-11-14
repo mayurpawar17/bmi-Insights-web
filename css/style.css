@@ -1,93 +1,154 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url("https://fonts.googleapis.com/css?family=Poppins");
 
-*{
-    padding: 0;
-    margin: 0;
-    font-family: "Poppins",Arial;
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", Arial;
 }
 
-body{
-    display: flex;
-  justify-content: center; 
-  align-items: center; 
-  height: 100vh; 
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   margin: 0;
 }
-.container{
-    /* border: 1px black solid; */
-    width: 300px;
-    height: 350px;
-    border-radius: 8px;
-    box-shadow: 1px 1px 8px lightgray;
+.container {
+  /* border: 1px black solid; */
+  width: 300px;
+  height: 350px;
+  border-radius: 8px;
+  box-shadow: 1px 1px 8px lightgray;
 }
-.title-container{
-    border-top-left-radius: 8px;
-   border-top-right-radius: 8px;
-   padding: 5px;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-    height: 80px;
-    background-color: blueviolet;
+.title-container {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  background-color: #333945;
 }
-.title{
-    color: white;
-    font-size: 25px;
+.title {
+  color: white;
+  font-size: 25px;
 }
-input{
-    padding: 10px 12px;
-    width: 50px;
-    font-size: 18px;
-    text-align: center;
-    margin: 5px 5px;
-    border: none;
-    font-weight: bold;
-    border-bottom: 2px solid blueviolet;
+input {
+  padding: 10px 12px;
+  width: 50px;
+  font-size: 18px;
+  text-align: center;
+  margin: 5px 5px;
+  border: none;
+  font-weight: bold;
+  border-bottom: 2px solid #333945;
 }
-input:focus{
-    outline: none;
+input:focus {
+  outline: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
-.input-container{
-    display: flex;
-    justify-content: center;
+.input-container {
+  display: flex;
+  justify-content: center;
 }
-.input-subcontainer{
-    margin: 0 2vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.input-subcontainer {
+  margin: 0 2vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.input-subcontainer p{
-    font-size: 15px;
+.input-subcontainer p {
+  font-size: 14px;
 }
-.btns{
-    /* border: 1px red solid; */
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+.btns {
+  /* border: 1px red solid; */
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
-button{
-    padding: 5px 10px;
-    border: 2px solid blueviolet;
-    border-radius: 3px;
-    background-color: white;
-    color: blueviolet;
-    font-weight: bold;
-    transition: all 0.5s ease;
+button {
+  padding: 5px 10px;
+  border: 2px solid #333945;
+  border-radius: 4px;
+  background-color: white;
+  color: #333945;
+  font-weight: bold;
+  transition: all 0.5s ease;
 }
-button:hover{
-    background-color: blueviolet;
-    color: white;
+button:hover {
+  background-color: #333945;
+  color: white;
 }
-.result-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
+.result-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+  padding: 5px;
 }
-.res{
-    font-size: 30px;
-    font-weight: bold;
+.status {
+  font-size: 15px;
+}
+.result {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.suggestion {
+  /* border: black 1px solid; */
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2px;
+}
+.range {
+  font-size: 12px;
+}
+.health-status {
+  font-size: 12px;
+  font-weight: bold;
+}
+.blue {
+  /* background-color: blue; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2px;
+  /* color: blue; */
+  border-radius: 6px;
+}
+.green {
+  /* border: 2px green solid; */
+  /* background-color: green; */
+  display: flex;
+  /* color: green; */
+  flex-direction: column;
+  align-items: center;
+  padding: 2px;
+  border-radius: 6px;
+}
+.yellow {
+  /* background-color: yellow; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* color: yellow; */
+  padding: 2px;
+  border-radius: 6px;
+}
+
+.red {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* color: red; */
+  padding: 2px;
+  border-radius: 6px;
 }

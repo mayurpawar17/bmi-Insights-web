@@ -17,48 +17,56 @@
         <div class="input-container">
             <div class="input-subcontainer">
                 <input type="number" id="height">
-                <p>height (cm)</p>
+                <p>Height (cm)</p>
 
             </div>
 
             <div class="input-subcontainer">
                 <input type="number" id="weight">
-                <p>weight (kg)</p>
+                <p>Weight (kg)</p>
 
             </div>
         </div>
 
         <div class="btns">
-            <button onclick="reset()">
+            <button onclick="resetCalculator()">
                 Reset
             </button>
-            <button onclick="calculateBmi()">
+            <button onclick="calculateBMI()">
                 Calculate
             </button>
         </div>
 
         <div class="result-container">
-            <p class="res" id="result"></p>
-            <!-- <p id="msg">Please enter your height and Weight</p> -->
+            <p class="result" id="result">0.0</p>
+            <p id="status" class="status">Please enter your height and Weight.</p>
+        </div>
+
+        <div class="suggestion">
+            <div class="blue" id="blue">
+                <p class="health-status" id="text-blue">Underweight</p>
+                <p class="range" id="text-blue">Below 18.5</p>
+            </div>
+            <div class="green" id="green">
+                <p class="health-status" id="text-green">Healthy</p>
+                <p class="range" id="text-green">18.5-24.9</p>
+            </div>
+            <div class="yellow" id="yellow">
+                <p class="health-status" id="text-yellow">Overweight</p>
+                <p class="range" id="text-yellow">25-29.9</p>
+            </div>
+            <div class="red" id="red">
+                <p class="health-status" id="text-red">Obese</p>
+                <p class="range" id="text-red">30 & Above</p>
+            </div>
         </div>
 
 
     </div>
 
-    <script>
 
 
-
-        function calculateBmi() {
-
-
-        }
-
-
-    </script>
-
-
-
+    <script src="/script.js"></script>
 </body>
 
 </html>
